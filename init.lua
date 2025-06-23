@@ -97,6 +97,7 @@ vim.g.have_nerd_font = false
 require 'kickstart.options'
 require 'kickstart.keymaps'
 require 'kickstart.autocmds'
+require 'kickstart.filetype'
 require 'kickstart.lazy-bootstrap'
 
 -- [[ Configure and install plugins ]]
@@ -121,6 +122,7 @@ require('lazy').setup({
   require 'kickstart.plugins.colorscheme',
   require 'kickstart.plugins.mini',
   require 'kickstart.plugins.treesitter',
+  require 'kickstart.plugins.mdx-treesitter',
 
   -- Load existing kickstart plugins
   require 'kickstart.plugins.debug',
